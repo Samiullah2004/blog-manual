@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @import './slick-carousel.scss';
+@import '../sections//manual-blog-section//manualBlogSection.scss';
+@import '../components/blog-card/blogCard.scss';
+ 
 
-body {
-  background-color: gray;
-}
+  

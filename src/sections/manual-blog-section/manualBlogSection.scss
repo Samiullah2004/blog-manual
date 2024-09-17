@@ -1,0 +1,57 @@
+.background {
+ background-color: #fffdf0;
+ 
+}
+.card-container {
+  max-width: 1245px;
+  margin: auto;
+  padding: 80px 173px;
+  position: relative;
+
+  @media screen and (max-width: 1224px) {
+    padding: 60px 16px;
+  }
+
+  .slick-slide {
+    padding: 20px 15px 10px;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        padding: 20px 5px 10px;
+
+      }
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    width: 40px;
+    top: 125%;
+    height: 40px;
+    background-color: #5c5cfa;
+    border-radius: 50%;
+    z-index: 10;
+
+    
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-prev {
+    left: 43%;
+  }
+
+  .slick-next {
+    right: 43%;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+
+    li button:before {
+      font-size: 10px;
+      color: #5c5cfa;
+    }
+  }
+}

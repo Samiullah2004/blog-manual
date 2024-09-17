@@ -74,6 +74,36 @@ export const pages = {
           },
           to: [{ type: 'genericTwoColumnSection' }],
         },
+        {
+          title: 'Blog Hub Section',
+          name: 'blogHubSection',
+          type: 'reference',
+          validation: (Rule) => Rule.required(),
+          options: {
+            disableNew: true,
+          },
+          to: [{ type: 'blogHubSection' }],
+        },
+        {
+          title: 'Featured Blog Section',
+          name: 'featuredBlogSection',
+          type: 'reference',
+          validation: (Rule) => Rule.required(),
+          options: {
+            disableNew: true,
+          },
+          to: [{ type: 'featuredBlogSection' }],
+        },
+        {
+          title: 'Manual Blog Section',
+          name: 'manualBlogSection',
+          type: 'reference',
+          validation: (Rule) => Rule.required(),
+          options: {
+            disableNew: true,
+          },
+          to: [{ type: 'manualBlogSection' }],
+        },
       ],
     },
   ],
